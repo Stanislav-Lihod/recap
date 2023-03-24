@@ -5,23 +5,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
   <form action="">
-<input type="text">
-  <button class="g-recaptcha" 
-        data-sitekey="6LdU4CslAAAAAOWNS-eo4W8CFwxXpWHNY6xzxGmI" 
-        data-callback='onSubmit' 
-        data-action='submit'>Submit</button>
+    <input type="text">
+    <form action="?" method="POST">
+      <div class="g-recaptcha" data-sitekey="6LfhliwlAAAAAA4rvXK1CuMZQuzsCghzdxt5dS9u"></div>
+      <br/>
+      <input type="submit" value="Submit">
+    </form>
   </form>
 
-   <script src="https://www.google.com/recaptcha/api.js"></script>
-   <script>
-    function onSubmit(token) {
-      console.log('test');
-      console.log(token);
-      document.getElementById("demo-form").submit();
-    }
-  </script>
+   
 </body>
 </html>
